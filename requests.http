@@ -1,0 +1,15 @@
+### GET request to example server
+GET http://localhost:8080
+###
+GET http://localhost:8080/api/v1/feedback
+###
+POST http://localhost:8080/api/v1/feedback
+Content-Type: application/json
+
+{
+  "playerName": "Emin",
+  "playerLastName": "Dari",
+  "playerEmail": "dariemin@gmail.com",
+  "message": "Work on your scanning",
+  "rating": 7.6
+}

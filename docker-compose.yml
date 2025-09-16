@@ -1,0 +1,24 @@
+services:
+  db:
+    container_name: postgres-coached
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: info
+      POSTGRES_PASSWORD: password
+      PGDATA: /data/postgres
+    volumes:
+      - db:/data/postgres
+    ports:
+      - "6732:5432"
+    networks:
+      - db
+    restart: unless-stopped
+
+# If you have more than one container and want them to communicate through
+# same network
+networks:
+  db:
+    driver: bridge
+
+volumes:
+  db:
