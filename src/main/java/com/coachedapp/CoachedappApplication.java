@@ -1,4 +1,4 @@
-package com.security.coachedapp;
+package com.coachedapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
