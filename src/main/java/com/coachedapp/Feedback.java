@@ -14,7 +14,7 @@ public class Feedback {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column
     @JsonProperty("id")
     private Integer id;
 
